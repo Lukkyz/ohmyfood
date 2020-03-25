@@ -28,6 +28,10 @@ a {
   padding: 1% 0% 1% 0%;
 }
 
+.page_title {
+  text-align: center;
+}
+
 .menus {
   display: flex;
   width: 80%;
@@ -36,6 +40,32 @@ a {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+}
+
+.menu {
+  font-size: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1px 1px 3px 3px #ededed;
+  margin-bottom: 10%;
+}
+.menu_starter, .menu_dish, .menu_dessert {
+  margin-bottom: 10%;
+}
+
+.elem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.elem_descr {
+  text-align: left;
 }
 
 .menu-prev {
@@ -56,6 +86,10 @@ a {
 }
 .menu-prev_title {
   margin-bottom: 10%;
+}
+.menu-prev_link:focus {
+  outline: 0;
+  border: none;
 }
 .menu-prev * {
   transition: transform 0.5s ease;
@@ -79,6 +113,9 @@ a {
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
+.menu1_icon--page {
+  font-size: 40px;
+}
 
 .menu2 {
   background-color: #fff5fe;
@@ -91,11 +128,19 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu2 .menu_dish {
+  color: #a56799;
+}
+.menu2 .menu_dessert {
+  color: #6e4ccc;
+}
+.menu2 .menu_starter, .menu2 .menu_dish, .menu2 .menu_dessert {
+  font-size: 17px;
+}
 
 .menu3 {
   background-color: #f9f9f9;
   font-family: "Satisfy";
-  color: #0887fb;
 }
 .menu3_title {
   background: -webkit-linear-gradient(bottom left, #0431df, #0887fb);
@@ -103,11 +148,13 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu3 .menu-prev_link {
+  color: #0431df;
+}
 
 .menu4 {
   background-color: #fdfffd;
   font-family: "Satisfy";
-  color: #72bf56;
 }
 .menu4_title {
   background: -webkit-linear-gradient(bottom left, #72bf56, #bfff7e);
@@ -115,17 +162,21 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu4 .menu-prev_link {
+  color: #72bf56;
+}
 
 .soon {
   color: #fdcb46;
   background-color: #579c87;
   padding: 1% 2% 1% 2%;
   border-radius: 10px;
-  width: 8.7em;
+  width: 8em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18pt;
+  font-size: 20pt;
   margin-bottom: 5%;
+  font-weight: 400;
 }
 
 .soon::after {
@@ -202,6 +253,28 @@ footer div:nth-child(2) {
   .menu-prev {
     flex: 0 0 38%;
   }
+
+  .menu {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .elem_descr {
+    margin-left: 5%;
+  }
+
+  .elem {
+    margin-bottom: 5%;
+  }
+
+  .elem:last-child {
+    margin-bottom: 0%;
+  }
+}
+@media all and (max-width: 800px) and (min-width: 600px) {
+  .soon {
+    margin-top: 5%;
+  }
 }
 @media all and (max-width: 600px) {
   .menu-prev {
@@ -221,6 +294,7 @@ footer div:nth-child(2) {
 
   .soon {
     font-size: 2.5vh;
+    margin-bottom: 3%;
   }
 
   footer {

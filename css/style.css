@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+}
+
 .header {
   background-color: #579c87;
   margin-top: 0;
@@ -55,6 +59,19 @@ a {
 }
 .menu_starter, .menu_dish, .menu_dessert {
   margin-bottom: 10%;
+}
+.menu_starter_title, .menu_dish_title, .menu_dessert_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.menu_trait {
+  display: inline-block;
+}
+.menu_trait--reverse {
+  transform: scaleX(-1);
 }
 
 .elem {
@@ -139,7 +156,7 @@ a {
 }
 
 .menu3 {
-  background-color: #f9f9f9;
+  background-color: #edefef;
   font-family: "Satisfy";
 }
 .menu3_title {

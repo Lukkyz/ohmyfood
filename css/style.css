@@ -73,6 +73,22 @@ h3 {
 .menu_trait--reverse {
   transform: scaleX(-1);
 }
+.menu h3 {
+  text-decoration: none;
+  position: relative;
+}
+.menu h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 4px solid;
+  transition: 0.4s;
+}
+.menu h3:hover:after {
+  width: 100%;
+}
 
 .elem {
   display: flex;
@@ -123,14 +139,14 @@ h3 {
   background-color: #fcdfdb;
   font-family: "Lobster";
 }
-.menu1_icon {
+.menu1_icon, .menu1_icon--page {
   background: -webkit-radial-gradient(bottom left, #f15861, #f78f6a);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
-.menu1_icon--page {
+.menu1_icon--page, .menu1_icon--page--page {
   font-size: 40px;
 }
 

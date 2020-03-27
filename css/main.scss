@@ -74,6 +74,22 @@ a {
 			transform: scaleX(-1);
 		}
 	}
+	& h3 {
+		text-decoration: none;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			border-bottom: 4px solid;
+			transition: 0.4s;
+		}
+		&:hover:after {
+			width: 100%;
+		}
+	}
 }
 
 .elem {
@@ -125,7 +141,7 @@ a {
 .menu1 {
     background-color: #fcdfdb;
     font-family: 'Lobster';
-    &_icon {
+    &_icon, &_icon--page {
         background: -webkit-radial-gradient(bottom left, #f15861, #f78f6a);
         -webkit-background-clip: text;
         background-clip: text;

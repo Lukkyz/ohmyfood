@@ -236,7 +236,7 @@ footer {
 }
 
 footer div {
-  animation: 2s wiggle infinite;
+  animation: 1s wiggle infinite;
 }
 
 footer div:nth-child(2) {
@@ -262,19 +262,37 @@ footer div:nth-child(2) {
 }
 @keyframes wiggle {
   0% {
-    transform: rotate(0deg);
+    transform: translate3d(-1px, 0, 0);
+  }
+  10% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  20% {
+    transform: translate3d(1px, 0, 0);
+  }
+  30% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  40% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+  70% {
+    transform: translate3d(-4px, 0 0);
   }
   80% {
-    transform: rotate(1deg);
+    transform: translate3d(1px, 0, 0);
   }
-  85% {
-    transform: rotate(4deg);
-  }
-  95% {
-    transform: rotate(-4deg);
+  90% {
+    transform: translate3d(0px, 0, 0);
   }
   100% {
-    transform: rotate(4deg);
+    transform: translate3d(0px, 0, 0);
   }
 }
 @keyframes zoom {

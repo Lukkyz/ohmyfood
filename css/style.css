@@ -57,6 +57,9 @@ h3 {
   box-shadow: 1px 1px 3px 3px #ededed;
   margin-bottom: 10%;
 }
+.menu_header {
+  margin-bottom: 2%;
+}
 .menu_starter, .menu_dish, .menu_dessert {
   margin-bottom: 10%;
 }

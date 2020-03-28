@@ -58,6 +58,9 @@ a {
 	text-align: center;
     box-shadow: 1px 1px 3px 3px #ededed;
 	margin-bottom: 10%;
+	&_header {
+		margin-bottom: 2%;
+	}
     &_starter, &_dish, &_dessert {
 		margin-bottom: 10%;
 	}

@@ -94,6 +94,7 @@ h3 {
 }
 
 .elem {
+  margin-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -145,12 +146,22 @@ h3 {
 .menu1_icon, .menu1_icon--page {
   background: -webkit-radial-gradient(bottom left, #f15861, #f78f6a);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 .menu1_icon--page, .menu1_icon--page--page {
+  margin-top: 5%;
+  margin-bottom: -5%;
   font-size: 40px;
+}
+.menu1_footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.menu1_footer .menu1_icon--page {
+  margin-top: 5%;
+  margin-right: 8px;
 }
 
 .menu2 {
@@ -161,7 +172,6 @@ h3 {
 .menu2_title {
   background: -webkit-linear-gradient(bottom left, #d8852e, #905bfd);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu2 .menu_dish {
@@ -181,7 +191,6 @@ h3 {
 .menu3_title {
   background: -webkit-linear-gradient(bottom left, #0431df, #0887fb);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu3 .menu-prev_link {
@@ -195,7 +204,6 @@ h3 {
 .menu4_title {
   background: -webkit-linear-gradient(bottom left, #72bf56, #bfff7e);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu4 .menu-prev_link {
@@ -283,7 +291,7 @@ footer div:nth-child(2) {
     transform: translate3d(2px, 0, 0);
   }
   70% {
-    transform: translate3d(-4px, 0 0);
+    transform: translate3d(-4px, 0, 0);
   }
   80% {
     transform: translate3d(1px, 0, 0);
@@ -303,30 +311,40 @@ footer div:nth-child(2) {
     opacity: 0.7;
   }
 }
-@media all and (min-width: 800px) and (max-width: 1330px) {
+@media all and (min-width: 768px) and (max-width: 1330px) {
   .menus {
     width: 100%;
   }
-}
-@media all and (max-width: 800px) and (min-width: 790px) {
+
+  .menu {
+    font-size: 30px;
+    width: 100%;
+  }
+  .menu_trait, .menu_trait--reverse {
+    width: 35%;
+  }
+
   .menu-prev {
     height: 250px;
     flex: 0 0 38%;
     margin-bottom: 5%;
   }
 }
-@media all and (max-width: 800px) and (min-width: 600px) {
+@media all and (max-width: 768px) and (min-width: 600px) {
   .soon {
     margin-top: 5%;
   }
 }
-@media all and (max-width: 790px) {
+@media all and (max-width: 768px) {
   .menu-prev {
     flex: 0 0 38%;
   }
 
   .menu {
     width: 100%;
+  }
+  .menu_trait, .menu_trait--reverse {
+    width: 35%;
   }
 
   .elem_descr {

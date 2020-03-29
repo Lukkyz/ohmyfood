@@ -77,6 +77,7 @@ a {
 			transform: scaleX(-1);
 		}
 	}
+	
 	& h3 {
 		text-decoration: none;
 		position: relative;
@@ -96,6 +97,7 @@ a {
 }
 
 .elem {
+	margin-bottom: 2%;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-between;
@@ -147,11 +149,21 @@ a {
     &_icon, &_icon--page {
         background: -webkit-radial-gradient(bottom left, #f15861, #f78f6a);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 10px;
 		&--page {
+			margin-top: 5%;
+			margin-bottom: -5%;
 			font-size: 40px; 
+		}
+	}
+	&_footer {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5%;
+		& .menu1_icon--page {
+			margin-top: 5%;
+			margin-right: 8px;
 		}
 	}
 	
@@ -164,7 +176,6 @@ a {
     &_title {
         background: -webkit-linear-gradient(bottom left, #d8852e, #905bfd);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 	& .menu_dish {
@@ -184,7 +195,6 @@ a {
     &_title {
         background: -webkit-linear-gradient(bottom left, #0431df, #0887fb);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 	& .menu-prev_link {
@@ -198,7 +208,6 @@ a {
     &_title {
         background: -webkit-linear-gradient(bottom left, #72bf56, #bfff7e);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 	& .menu-prev_link {
@@ -273,7 +282,7 @@ footer div:nth-child(2) {
    40% { transform: translate3d(-2px, 0, 0); }
    50% { transform: translate3d(-1px, 0, 0); }
    60% { transform: translate3d(2px, 0, 0); }
-   70% { transform: translate3d(-4px,0 0); }
+   70% { transform: translate3d(-4px,0,0); }
    80% { transform: translate3d(1px, 0, 0); }
    90% { transform: translate3d(0px, 0, 0); }
   100% { transform: translate3d(0px, 0, 0); }
@@ -289,33 +298,39 @@ footer div:nth-child(2) {
     
 }
  
-@media all and (min-width: 800px) and (max-width: 1330px) {
+@media all and (min-width: 768px) and (max-width: 1330px) {
     .menus {
         width: 100%;
     }
-}
-
-@media all and (max-width: 800px) and (min-width: 790px) {
+	.menu {
+		font-size: 30px;
+		width:100%;
+		&_trait, &_trait--reverse {
+			width: 35%
+		}
+	}
 	.menu-prev {
 		height: 250px;
 	   flex: 0 0 38%;
 	   margin-bottom: 5%;
-	}	
+	}
 }
 
-@media all and (max-width: 800px) and (min-width: 600px) {
+@media all and (max-width: 768px) and (min-width: 600px) {
   	.soon {
     	margin-top: 5%
 	}
 }
 
-@media all and (max-width: 790px) {
+@media all and (max-width: 768px) {
    .menu-prev {
 	   flex: 0 0 38%;
    } 
   .menu {
-	width:100%;
-	
+		width:100%;
+		&_trait, &_trait--reverse {
+			width: 35%
+		}
 	}
 	.elem_descr {
 		margin-right: 5%;

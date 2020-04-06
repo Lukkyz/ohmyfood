@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Simonetta&display=swap");
+
 $primary-color: #579c87;
 $text-color: #fdcb46;
 
@@ -18,9 +19,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
- h3 {
+
+h3 {
 	 margin: 0
- }
+}
 
 .header {
     background-color: $primary-color;
@@ -38,6 +40,7 @@ a {
 .page_title {
 	text-align:center;
 }
+
 .menus {
     display: flex;
     width: 80%;
@@ -233,6 +236,17 @@ a {
     animation: 4s point infinite;
 }
 
+.legal_notice {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 1px 3px 3px #ededed;
+	padding: 2%;
+	& section h3 {
+		color: $text-color;
+	}
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -248,7 +262,7 @@ footer {
     font-size: 25px;
 }
 
-footer div {
+footer div:hover {
     animation: 1s wiggle infinite;
 }
 
@@ -257,16 +271,10 @@ footer div:nth-child(2) {
 }
 
 @keyframes point {
-    0% {
-        content: ''
-    }
     25% {
-        content: ''
-    }
-    50% {
         content: '.'
     }
-    75% {
+    50% {
         content: '..'
     }
     100% {

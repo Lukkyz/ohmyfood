@@ -228,6 +228,17 @@ h3 {
   animation: 4s point infinite;
 }
 
+.legal_notice {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 3px 3px #ededed;
+  padding: 2%;
+}
+.legal_notice section h3 {
+  color: #fdcb46;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -243,7 +254,7 @@ footer {
   font-size: 25px;
 }
 
-footer div {
+footer div:hover {
   animation: 1s wiggle infinite;
 }
 
@@ -252,16 +263,10 @@ footer div:nth-child(2) {
 }
 
 @keyframes point {
-  0% {
-    content: "";
-  }
   25% {
-    content: "";
-  }
-  50% {
     content: ".";
   }
-  75% {
+  50% {
     content: "..";
   }
   100% {

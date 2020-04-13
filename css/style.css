@@ -173,6 +173,7 @@ h3 {
   background: -webkit-linear-gradient(bottom left, #d8852e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 32px;
 }
 .menu2 .menu_dish {
   color: #a56799;
@@ -239,7 +240,7 @@ h3 {
   color: #fdcb46;
 }
 
-footer {
+.footer_page {
   display: flex;
   justify-content: space-between;
   background-color: #579c87;
@@ -254,11 +255,11 @@ footer {
   font-size: 25px;
 }
 
-footer div:hover {
+.footer_page div:hover {
   animation: 1s wiggle infinite;
 }
 
-footer div:nth-child(2) {
+.footer_page div:nth-child(2) {
   padding-right: 20px;
 }
 

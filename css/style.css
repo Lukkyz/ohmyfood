@@ -115,11 +115,11 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 35px;
+  font-size: 2.5vw;
   box-shadow: 1px 1px 3px 3px #ededed;
 }
 .menu-prev:nth-child(2) {
-  font-size: 30px;
+  font-size: 1.8vw;
 }
 .menu-prev_title {
   margin-bottom: 10%;
@@ -172,7 +172,6 @@ h3 {
   background: -webkit-linear-gradient(bottom left, #d8852e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 32px;
 }
 .menu2 .menu_dish {
   color: #a56799;
@@ -218,8 +217,8 @@ h3 {
   width: 8em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20pt;
-  margin-bottom: 5%;
+  font-size: 4vh;
+  margin-bottom: 10vh;
   font-weight: 400;
 }
 
@@ -250,7 +249,7 @@ h3 {
   position: fixed;
   width: 100%;
   padding: 10px 1000px 10px 10px;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .footer_page div:hover {
@@ -341,7 +340,11 @@ h3 {
 }
 @media all and (max-width: 768px) {
   .menu-prev {
+    font-size: 2.5vh;
     flex: 0 0 38%;
+  }
+  .menu-prev:nth-child(2) {
+    font-size: 2vh;
   }
 
   .menu {
@@ -362,15 +365,19 @@ h3 {
   .elem:last-child {
     margin-bottom: 0%;
   }
+
+  .soon {
+    font-size: 3vh;
+  }
+
+  .footer_page {
+    font-size: 2.5vh;
+  }
 }
 @media all and (max-width: 600px) {
   .menu-prev {
-    font-size: 25px;
     height: 20vh;
     margin: 2vh;
-  }
-  .menu-prev:nth-child(2) {
-    font-size: 20px;
   }
 
   .menu {
@@ -382,17 +389,7 @@ h3 {
 
   .menus {
     width: auto;
-    max-height: 60%;
     height: 72vh;
-  }
-
-  .soon {
-    font-size: 2.5vh;
-    margin-bottom: 3%;
-  }
-
-  footer {
-    font-size: 20px;
   }
 }
 

@@ -320,7 +320,7 @@ h3 {
   }
 
   .menu {
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
   }
   .menu_trait, .menu_trait--reverse {
@@ -381,15 +381,14 @@ h3 {
   }
 
   .menu {
-    font-size: 15px;
+    font-size: 20px;
   }
   .menu.menu2 div {
     font-size: 13px;
   }
 
   .menus {
-    width: auto;
-    height: 72vh;
+    height: 80vh;
   }
 }
 

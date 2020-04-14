@@ -129,14 +129,11 @@ h3 {
   border: none;
 }
 .menu-prev * {
-  transition: transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .menu-prev:hover * {
   transform: scale(1.3);
-  animation: 0.5s zoom both;
-}
-.menu-prev:hover {
-  animation: 0.5s zoom both;
+  opacity: 0.5;
 }
 
 .menu1 {
@@ -146,6 +143,7 @@ h3 {
 .menu1_icon, .menu1_icon--page {
   background: -webkit-radial-gradient(bottom left, #f15861, #f78f6a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
@@ -212,12 +210,12 @@ h3 {
 .soon {
   color: #fdcb46;
   background-color: #579c87;
-  padding: 1% 2% 1% 2%;
+  padding: 1vh 1vh 1vh 2vh;
   border-radius: 10px;
   width: 8em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 4vh;
+  font-size: 2vw;
   margin-bottom: 10vh;
   font-weight: 400;
 }
@@ -248,7 +246,7 @@ h3 {
   bottom: 0;
   position: fixed;
   width: 100%;
-  padding: 10px 1000px 10px 10px;
+  padding: 1vh 1vh 1vh 1vh;
   font-size: 2vw;
 }
 
@@ -306,14 +304,6 @@ h3 {
     transform: translate3d(0px, 0, 0);
   }
 }
-@keyframes zoom {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.7;
-  }
-}
 @media all and (min-width: 768px) and (max-width: 1330px) {
   .menus {
     width: 100%;
@@ -331,11 +321,6 @@ h3 {
     height: 250px;
     flex: 0 0 38%;
     margin-bottom: 5%;
-  }
-}
-@media all and (max-width: 768px) and (min-width: 600px) {
-  .soon {
-    margin-top: 5%;
   }
 }
 @media all and (max-width: 768px) {
@@ -367,16 +352,16 @@ h3 {
   }
 
   .soon {
-    font-size: 3vh;
+    font-size: 3vw;
   }
 
   .footer_page {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 }
 @media all and (max-width: 600px) {
   .menu-prev {
-    height: 20vh;
+    height: 25vh;
     margin: 2vh;
   }
 
@@ -388,7 +373,23 @@ h3 {
   }
 
   .menus {
+    width: 100%;
     height: 80vh;
+  }
+
+  .soon {
+    font-size: 4vw;
+  }
+}
+@media all and (max-width: 350px) {
+  .menus {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-prev {
+    width: 100%;
+    flex: 0 0 50%;
   }
 }
 

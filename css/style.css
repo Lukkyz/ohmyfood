@@ -258,10 +258,13 @@ h3 {
 }
 
 @keyframes point {
-  25% {
+  0% {
+    content: "";
+  }
+  33% {
     content: ".";
   }
-  50% {
+  66% {
     content: "..";
   }
   100% {

@@ -264,13 +264,16 @@ h3 {
 }
 
 @keyframes point {
-    25% {
+    0% {
+        content: ''
+    }
+    33% {
         content: '.'
     }
-    50% {
-        content: '..'
+    66% {
+        content: '..';
     }
-    100% {
+	100% {
         content: '...';
     }
 }

@@ -36,16 +36,6 @@ h3 {
   text-align: center;
 }
 
-.menus {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  align-content: start;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .menu {
   font-size: 25px;
   width: 60%;
@@ -103,6 +93,16 @@ h3 {
 }
 .elem_descr {
   text-align: left;
+}
+
+.menus {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-content: start;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-prev {
@@ -246,7 +246,7 @@ h3 {
   position: fixed;
   width: 100%;
   padding: 1vh 1vh 1vh 1vh;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .footer_page div:hover {
@@ -313,7 +313,7 @@ h3 {
 
   .menu {
     font-size: 25px;
-    width: 100%;
+    width: 80%;
   }
   .menu_trait, .menu_trait--reverse {
     width: 35%;

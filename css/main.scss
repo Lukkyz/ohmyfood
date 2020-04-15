@@ -37,19 +37,10 @@ h3 {
 }
 
 .page_title {
-	text-align:center;
+	text-align: center;
 }
 
-.menus {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-	align-content: start;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+// Menu in menu page
 .menu {
 	font-size: 25px;
 	width: 60%;
@@ -107,6 +98,17 @@ h3 {
 	&_descr {
 		text-align: left;
 	}
+}
+
+// Container for menu-prev
+.menus {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+	align-content: start;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-prev {
@@ -252,7 +254,7 @@ h3 {
     position: fixed;
     width: 100%;
     padding: 1vh 1vh 1vh 1vh;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 .footer_page div:hover {
@@ -298,7 +300,7 @@ h3 {
     }
 	.menu {
 		font-size: 25px;
-		width:100%;
+		width:80%;
 		&_trait, &_trait--reverse {
 			width: 35%
 		}
